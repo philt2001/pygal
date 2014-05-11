@@ -182,6 +182,9 @@ class Config(MetaConfig('ConfigBase', (object,), {})):
 
     inner_radius = Key(
         0, float, "Look", "Piechart inner radius (donut), must be <.9")
+    
+    half_pie = Key(
+        False, bool, "Look", "Create a half-pie chart")
 
     ############ Label ############
     x_labels = Key(
